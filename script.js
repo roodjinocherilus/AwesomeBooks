@@ -1,4 +1,3 @@
-
 const title = document.getElementById('title');
 const author = document.getElementById('author');
 const buttonAdd = document.getElementById('add');
@@ -31,7 +30,6 @@ function AddBook() {
 
 buttonAdd.addEventListener('click', AddBook);
 
-
 // Display Book function
 
 let getBooks = localStorage.getItem('books');
@@ -46,10 +44,10 @@ if (getBooks.length > 0) {
   <hr>
   </div>`;
   }
-  booksSection.innerHTML = ${book};
+  booksSection.innerHTML = `${book}`;
 }
 
-//Delete book function
+// Delete book function
 const deleteBtn = document.querySelectorAll('.button');
 function DeleteBook() {
   const index = deleteBtn.value;
