@@ -48,3 +48,17 @@ if (getBooks.length > 0) {
   }
   booksSection.innerHTML = ${book};
 }
+
+//Delete book function
+const deleteBtn = document.querySelectorAll('.button');
+function DeleteBook() {
+  const index = deleteBtn.value;
+  getBooks.splice(index, 1);
+  getBooks = JSON.stringify(getBooks);
+  localStorage.setItem('books', getBooks);
+  // eslint-disable-next-line no-restricted-globals
+  location.reload();
+}
+deleteBtn.forEach((deleteBtn) => {
+  deleteBtn.addEventListener('click', DeleteBook);
+});
