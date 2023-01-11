@@ -3,6 +3,7 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 h1 {
   text-align: center;
 }
@@ -45,6 +46,7 @@ h1 {
   color: red;
   text-align: center;
 }
+
 .show {
   display: none;
 }
