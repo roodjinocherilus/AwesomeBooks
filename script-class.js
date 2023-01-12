@@ -91,7 +91,6 @@ deleteBtn.forEach((btn) => {
   });
 });
 
-
 document.getElementById('date').innerHTML = Date();
 
 const list = document.getElementById('list-books');
@@ -123,7 +122,8 @@ function AddNew() {
   btnList.classList.add('link_nav');
   btnContact.classList.add('link_nav');
 }
-Contact() {
+
+function Contact() {
   list.classList.add('hide');
   subtitle.classList.add('hide');
   form.classList.add('hide');
