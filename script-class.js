@@ -123,3 +123,19 @@ function AddNew() {
   btnList.classList.add('link_nav');
   btnContact.classList.add('link_nav');
 }
+Contact() {
+  list.classList.add('hide');
+  subtitle.classList.add('hide');
+  form.classList.add('hide');
+  contact.classList.remove('hide');
+  btnContact.classList.add('blue');
+  btnContact.classList.remove('link_nav');
+  btnList.classList.add('link_nav');
+  btnAddNew.classList.add('link_nav');
+}
+
+btnList.addEventListener('click', List);
+
+btnAddNew.addEventListener('click', AddNew);
+
+btnContact.addEventListener('click', Contact);
